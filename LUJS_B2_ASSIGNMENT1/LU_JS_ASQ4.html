@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Program to display only elements containing 'a' in them from a array</title>
+</head>
+<body>
+	<script>
+		// Define array 
+		let programmings = ["csharp",'java',"haha","ruby","php","python","asp"];
+		// Use filter() to traverse and locate the elements containing specific character
+		// const startsWithN = countries.filter((country) => country.startsWith("N"));
+		//let ele_with_a = programmings.filter(programmings =>programmings.s);
+		// console.log(ele_with_a);
+
+		let chara = 'a';
+		for(let i=0;i<programmings.length;i++){
+			let temp = programmings[i].split('');
+			//console.log(temp);
+			if(temp[i]==chara){
+				let joinstr = temp.join('');
+				let arr = Array.append(joinstr);
+				console.log(arr);
+			}
+		}	
+	</script>
+</body>
+</html>

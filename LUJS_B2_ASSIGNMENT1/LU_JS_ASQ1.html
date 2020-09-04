@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Program to search for a particular character in a string</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		// Get the string from end user
+		let stringx = prompt("Please enter any string");
+		
+		// Calculate the lenght of string
+		let len = stringx.length;
+
+		// Get the index to be searched
+		let index = prompt("Please enter the index to be searched:");
+
+		// Verify whether entered index is less than the length
+		// String concatination using templates 
+		// Syntax : ===> `string1 ${var1} string2 ${var2}`
+
+		if(index <= len){
+			document.write(`<h1>Character at the index ${index} is '${stringx.charAt(index)}'</h1>`);	
+		}else{
+			document.write("<h1>Index out of string's length</h1>");
+		}
+
+		
+	</script>
+</body>
+</html>
