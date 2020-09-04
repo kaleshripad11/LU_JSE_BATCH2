@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Program to search for a element in a array of strings</title>
+</head>
+<body>
+	<script>
+		// Define arrays
+		let array = [],array1=[];
+
+		// Get length of array
+		let len = prompt("Enter the lenght of array");
+
+		// Get the character to be searched
+		let search_char = prompt('Enter the character to be searched : ');
+
+		// Loop through the array to input elements
+		for(let i=0;i<len;i++){
+			array[i] = prompt('Enter elements');
+		}
+		// Print array
+		console.log(array);
+
+		// Loop through the newly generated array
+		for(let i=0;i<len;i++){
+			// Split the every single string from array a and store it to a temperory variable temp
+ 			let temp = array[i].split('');
+
+			// Check whether given character is present in temperory variable temp
+			if(temp.includes(search_char)){
+				// If given character found in temperory variable just join the splitted string and 
+				// store it to new array newar
+				array1[i] = temp.join('');
+				// Print on console
+				console.log(array1[i]);
+			}
+		}
+	</script>
+</body>
+</html>
